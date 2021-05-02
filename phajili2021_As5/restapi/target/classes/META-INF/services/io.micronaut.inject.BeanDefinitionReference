@@ -1,0 +1,3 @@
+edu.ada.micronaut.controller.impl.$FinancialControllerImplDefinitionClass
+edu.ada.micronaut.service.impl.$YahooFinanceServiceImplDefinitionClass
+edu.ada.micronaut.auth.$AuthenticationUserAndPasswordDefinitionClass

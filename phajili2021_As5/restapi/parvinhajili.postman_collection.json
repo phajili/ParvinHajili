@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "0352df45-f025-4a26-9231-0a6391f42acb",
+		"name": "parvinhajili",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"Yahoo\",\n    \"password\":\"Password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Batch",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJZYWhvbyIsIm5iZiI6MTYxOTk3NDU3MSwicm9sZXMiOltdLCJpc3MiOiJyZXN0YXBpIiwiZXhwIjoxNjE5OTc4MTcxLCJpYXQiOjE2MTk5NzQ1NzF9._evPpLJdunmk72OU_pIKBGpywYIho4S5Yb5ue-lLu_s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/financial/batch_data?provider=yahoo&stock_index=TSLA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"financial",
+						"batch_data"
+					],
+					"query": [
+						{
+							"key": "provider",
+							"value": "yahoo"
+						},
+						{
+							"key": "stock_index",
+							"value": "TSLA"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
